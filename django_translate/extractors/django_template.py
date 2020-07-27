@@ -2,8 +2,14 @@
 
 import re
 import os
-from django.template.base import Lexer, TOKEN_TEXT, TOKEN_VAR, TOKEN_BLOCK
+from django.template.base import Lexer
 from python_translate.extractors.base import Translation, TransVar, ExtensionBasedExtractor
+
+if django.VERSION >= (1, 9):
+    from django.template.base import TokenType
+    TOKEN_BLOCK = TokenType.BLOCK
+else:
+    from django.template.base import TOKEN_BLOCK
 
 val = '''(?:[^"' ]+)|(?:"[^"]*?")|(?:'[^']*?')'''
 
