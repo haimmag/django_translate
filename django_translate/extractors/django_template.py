@@ -2,6 +2,7 @@
 
 import re
 import os
+import django
 from django.template.base import Lexer
 from python_translate.extractors.base import Translation, TransVar, ExtensionBasedExtractor
 
