@@ -2,13 +2,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="django-translate",
+    name="django-translate2",
     version="1.0.18",
     author="Adam Zieliński",
     author_email="adam@adamziel.com",
     packages=find_packages(),
     include_package_data=True,
-    url="https://github.com/adamziel/django_translate",
+    url="https://github.com/haimmag/django_translate",
 
     license="MIT",
     description="Non-gettext translations for django.",
